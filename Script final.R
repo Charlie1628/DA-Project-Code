@@ -1,4 +1,3 @@
-setwd("C:/Users/Charlie/Desktop/CNNIC Project")
 install.packages("tidyverse")
 install.packages("car")
 library(readxl)
@@ -6,10 +5,10 @@ library(dplyr)
 library(tidyr)
 library(car)
 
-quality_ds <- read_xlsx("C:/Users/Charlie/Desktop/CNNIC Project/PerceptionLinkDS.xlsx", sheet = 2)
-value_ds <- read_xlsx("C:/Users/Charlie/Desktop/CNNIC Project/PerceptionLinkDS.xlsx", sheet = 3)
-reputation_ds <- read_xlsx("C:/Users/Charlie/Desktop/CNNIC Project/PerceptionLinkDS.xlsx", sheet = 4)
-consideration_ds <- read_xlsx("C:/Users/Charlie/Desktop/CNNIC Project/PerceptionLinkDS.xlsx", sheet = 5)
+quality_ds <- read_xlsx("PLDS.xlsx", sheet = 2)
+value_ds <- read_xlsx("PLDS.xlsx", sheet = 3)
+reputation_ds <- read_xlsx("PLDS.xlsx", sheet = 4)
+consideration_ds <- read_xlsx("PLDS.xlsx", sheet = 5)
 
 n <- nrow(quality_ds) - 4
 
